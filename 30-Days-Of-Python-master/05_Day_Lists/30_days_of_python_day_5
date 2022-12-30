@@ -1,0 +1,342 @@
+from calendar import c
+
+
+countries = [
+  'Afghanistan',
+  'Albania',
+  'Algeria',
+  'Andorra',
+  'Angola',
+  'Antigua and Barbuda',
+  'Argentina',
+  'Armenia',
+  'Australia',
+  'Austria',
+  'Azerbaijan',
+  'Bahamas',
+  'Bahrain',
+  'Bangladesh',
+  'Barbados',
+  'Belarus',
+  'Belgium',
+  'Belize',
+  'Benin',
+  'Bhutan',
+  'Bolivia',
+  'Bosnia and Herzegovina',
+  'Botswana',
+  'Brazil',
+  'Brunei',
+  'Bulgaria',
+  'Burkina Faso',
+  'Burundi',
+  'Cambodia',
+  'Cameroon',
+  'Canada',
+  'Cape Verde',
+  'Central African Republic',
+  'Chad',
+  'Chile',
+  'China',
+  'Colombi',
+  'Comoros',
+  'Congo (Brazzaville)',
+  'Congo',
+  'Costa Rica',
+  "Cote d'Ivoire",
+  'Croatia',
+  'Cuba',
+  'Cyprus',
+  'Czech Republic',
+  'Denmark',
+  'Djibouti',
+  'Dominica',
+  'Dominican Republic',
+  'East Timor (Timor Timur)',
+  'Ecuador',
+  'Egypt',
+  'El Salvador',
+  'Equatorial Guinea',
+  'Eritrea',
+  'Estonia',
+  'Ethiopia',
+  'Fiji',
+  'Finland',
+  'France',
+  'Gabon',
+  'Gambia, The',
+  'Georgia',
+  'Germany',
+  'Ghana',
+  'Greece',
+  'Grenada',
+  'Guatemala',
+  'Guinea',
+  'Guinea-Bissau',
+  'Guyana',
+  'Haiti',
+  'Honduras',
+  'Hungary',
+  'Iceland',
+  'India',
+  'Indonesia',
+  'Iran',
+  'Iraq',
+  'Ireland',
+  'Israel',
+  'Italy',
+  'Jamaica',
+  'Japan',
+  'Jordan',
+  'Kazakhstan',
+  'Kenya',
+  'Kiribati',
+  'Korea, North',
+  'Korea, South',
+  'Kuwait',
+  'Kyrgyzstan',
+  'Laos',
+  'Latvia',
+  'Lebanon',
+  'Lesotho',
+  'Liberia',
+  'Libya',
+  'Liechtenstein',
+  'Lithuania',
+  'Luxembourg',
+  'Macedonia',
+  'Madagascar',
+  'Malawi',
+  'Malaysia',
+  'Maldives',
+  'Mali',
+  'Malta',
+  'Marshall Islands',
+  'Mauritania',
+  'Mauritius',
+  'Mexico',
+  'Micronesia',
+  'Moldova',
+  'Monaco',
+  'Mongolia',
+  'Morocco',
+  'Mozambique',
+  'Myanmar',
+  'Namibia',
+  'Nauru',
+  'Nepal',
+  'Netherlands',
+  'New Zealand',
+  'Nicaragua',
+  'Niger',
+  'Nigeria',
+  'Norway',
+  'Oman',
+  'Pakistan',
+  'Palau',
+  'Panama',
+  'Papua New Guinea',
+  'Paraguay',
+  'Peru',
+  'Philippines',
+  'Poland',
+  'Portugal',
+  'Qatar',
+  'Romania',
+  'Russia',
+  'Rwanda',
+  'Saint Kitts and Nevis',
+  'Saint Lucia',
+  'Saint Vincent',
+  'Samoa',
+  'San Marino',
+  'Sao Tome and Principe',
+  'Saudi Arabia',
+  'Senegal',
+  'Serbia and Montenegro',
+  'Seychelles',
+  'Sierra Leone',
+  'Singapore',
+  'Slovakia',
+  'Slovenia',
+  'Solomon Islands',
+  'Somalia',
+  'South Africa',
+  'Spain',
+  'Sri Lanka',
+  'Sudan',
+  'Suriname',
+  'Swaziland',
+  'Sweden',
+  'Switzerland',
+  'Syria',
+  'Taiwan',
+  'Tajikistan',
+  'Tanzania',
+  'Thailand',
+  'Togo',
+  'Tonga',
+  'Trinidad and Tobago',
+  'Tunisia',
+  'Turkey',
+  'Turkmenistan',
+  'Tuvalu',
+  'Uganda',
+  'Ukraine',
+  'United Arab Emirates',
+  'United Kingdom',
+  'United States',
+  'Uruguay',
+  'Uzbekistan',
+  'Vanuatu',
+  'Vatican City',
+  'Venezuela',
+  'Vietnam',
+  'Yemen',
+  'Zambia',
+  'Zimbabwe',
+];
+
+list = []
+
+
+list_1 = ["item1", True, False, 3j, 8, 9.81, "item2"]
+
+
+print(len(list_1))
+
+
+print(list_1[0], list_1[3], list_1[6])
+
+
+mixed_data_types = ["N.Singh", 16, 1.76, "single", "25005"]
+
+
+companies = ["Meta", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+
+print(companies)
+
+
+print(len(companies))
+
+
+print(companies[0], companies[3], companies[6])
+
+
+companies[0] = "Lockheed"
+
+print(companies)
+
+
+companies.append("Broadcom")
+
+
+companies.insert(4, "Intel")
+
+print(companies)
+
+upped_company = companies[0].upper()
+
+print(upped_company)
+
+
+print(companies, "#")
+
+
+print("Xiaomi" in companies)
+
+
+companies.sort()
+
+print(companies)
+
+
+companies.sort(reverse=True)
+
+print(companies)
+
+
+print(companies[0:2])
+
+
+print(companies[6:8])
+
+
+print(companies[4])
+
+
+companies.remove('Oracle')
+
+print(companies)
+
+
+del companies[4]
+
+print(companies)
+
+
+companies.pop()
+
+print(companies)
+
+
+del companies
+
+
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Pyhton', 'SQL']
+back_end = ['Node','Express', 'MongoDB']
+
+front_end_back_end = front_end + back_end
+
+print(front_end_back_end)
+
+full_stack = front_end_back_end.copy()
+
+
+# L. 2
+
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+print(ages.sort)
+
+print(int(ages[4])/2)
+
+average_age = sum(ages)/10
+
+print(max(ages) - min(ages))
+
+print("The min:", abs(int(min(ages) - average_age)), "\nThe max:", abs(int(max(ages) - average_age)))
+
+
+middle_country_or_countries_operation = float(len(countries))  / 2
+
+if middle_country_or_countries_operation % 2 != 0:
+  print(countries[int((middle_country_or_countries_operation + 0.5)-1)]) #next
+  print(countries[int((middle_country_or_countries_operation - 0.5)-1)]) #previous
+
+
+countries_copy = countries.copy()
+
+countries_copy.append("Liberland")
+
+
+
+if 'China' and 'Russia' and 'United States' in countries:
+    list2 = []
+    list2.append('China')
+    list2.append('Russia')
+    list2.append('United States')
+
+print(list2)
+
+scandic_countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+
+unpacked_countries = scandic_countries[0], scandic_countries[1], scandic_countries[2]
+
+real_scandic_countries = scandic_countries[3], scandic_countries[4],  scandic_countries[5], scandic_countries[6]
+
+print(real_scandic_countries)
+
+print(unpacked_countries)
