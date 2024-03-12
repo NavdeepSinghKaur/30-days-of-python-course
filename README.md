@@ -2,4 +2,4 @@
 
 This course was made by github.com/Asabeneh
 
-I took this course a bit more than 2 years ago, when I was 15.
+I took this course in december of 2022. 
